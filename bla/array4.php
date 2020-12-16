@@ -70,7 +70,6 @@ for ($i = 0; $i < 1; $i++) {
     }
 }
 
-
 // print_r($usedId);
 
 function cmp($arrA, $arrB)
@@ -81,4 +80,61 @@ function cmp($arrA, $arrB)
 }
 usort($masyvas5, "cmp");
 
-print_r($masyvas5);
+// print_r($masyvas5);
+
+// $mazasMasyvas = [9, 10, -38, 0, 16];
+
+
+// function rusiavimas($a, $b)
+// {
+//     echo "lyginam $a su $b <br>";
+//     return $a <=> $b;   // -1 1 0
+// }
+// usort($mazasMasyvas, 'rusiavimas');
+// print_r($mazasMasyvas);
+
+function generateRandomString($length = 10) {
+    return substr(str_shuffle(str_repeat($x='abcdefghijklmnopqrstuvwxyz', ceil($length/strlen($x)) )),1,$length);
+}
+
+foreach($masyvas5 as &$user) {
+    $user['name'] = generateRandomString(rand(5,15));
+    $user['surname'] = generateRandomString(rand(5,15));
+}
+
+// print_r($masyvas5);
+
+foreach (range(0, 9) as $value11) {
+    $rand = rand(0, 5);
+    if($rand === 0){
+        $masyvas11[] = rand(0, 10);
+    } else {
+        $array8 = [];
+        foreach (range(1, $rand) as $value11){
+            $array8[] = rand(0,10);
+        }
+        $masyvas11[] = $array8;
+    }
+}
+
+
+
+
+function cmp11($A, $B)
+{
+    $a = is_array($A) ? array_sum($A) : $A;
+    $b = is_array($B) ? array_sum($B) : $B;
+    return $b <=> $a;   // -1 1 0
+}
+usort($masyvas11, "cmp11");
+
+
+print_r($masyvas11);
+
+
+echo '#'.dechex(rand(1,255)).dechex(rand(1,255)).dechex(rand(1,255));
+
+
+
+
+
