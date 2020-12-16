@@ -13,3 +13,4 @@ $masyvas = 'ZUIKIS';
 
 
 file_put_contents(__DIR__.'/tekstas.txt', $masyvas);
+
