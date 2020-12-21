@@ -101,3 +101,18 @@ $z = 0;
     echo "2nd part sum: $sumSecond <br>";
     echo "Absolute difference: $absDiff";
     echo "</pre>";
+
+
+echo md5("sajdjhasd");
+
+// '59ba5198d2c891385d4cb96fe326038c'
+?>
+<style>
+h1 {
+    display: inline;
+}
+</style>
+<?php
+echo '<h1>59</h1>ba<h1>5198</h1>d<h1>2</h1>c<h1>891385</h1>';
+
+
